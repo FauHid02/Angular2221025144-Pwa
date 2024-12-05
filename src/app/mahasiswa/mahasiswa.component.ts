@@ -28,13 +28,15 @@ export class MahasiswaComponent implements AfterViewInit {
 
 
   bindMahasiswa(): void {
-    this.httpClient.get("https://stmikpontianak.net/011100862/tampilMahasiswa.php").subscribe((data: any) => {
+    /*
+    this.httpClient.get("https://stmikpontianak.cloud/011100862/tampilMahasiswa.php").subscribe((data: any) => {
       console.log(data);
 
       this.table1.clear();
 
-      data.forEach((element: any) => {
+      data.for((element: any) => {
         var tempatTanggalLahir = element.TempatLahir + "," + element.TanggalLahir;
+
         var row = [
           element.NIM,
           element.Nama,
@@ -49,6 +51,7 @@ export class MahasiswaComponent implements AfterViewInit {
       });
       this.table1.draw(false);
     });
+    */
   }
 }
 
