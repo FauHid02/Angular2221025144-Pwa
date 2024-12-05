@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-@Component({  
+@Component({
   selector: 'app-sidebar',
   standalone: true,
   imports: [RouterModule],
@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
 })
 export class SidebarComponent {
 
-  @Input()  moduleName: string   = "";
+  @Input() moduleName: string = "";
 }
